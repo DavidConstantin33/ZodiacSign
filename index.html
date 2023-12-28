@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Zodiac</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="title">
+<h1>⭐ ZODIAC ⭐</h1>
+<p>Enter your birth date to find out your zodiac sign</p>
+</div>
+
+<div>
+    <form action="/submit" method="post" id="birthdateForm">
+        <label for="day">Day:</label>
+        <select id="day" name="day" required></select>
+
+        <label for="month">Month:</label>
+        <select id="month" name="month" required></select>
+
+        <label for="year">Year:</label>
+        <select id="year" name="year" required></select>
+
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<div id="result"></div>
+
+<script src="js.js"></script>
+</body>
+</html>
